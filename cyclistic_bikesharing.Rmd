@@ -1,0 +1,43 @@
+---
+title: "Cyclictic Bike Sharing"
+author: "Diji"
+date: "12/19/2021"
+output: github_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+# Business task 
+The current primary goal of the company is to maximize the number of annual memberships.To facilitate this process, the marketing teams would like the following three questions answered: 
+
+- How do annual members and casual riders use Cyclistic bikes differently?
+- Why would casual riders buy Cyclistic annual memberships?
+- How can Cyclistic use digital media to influence casual riders to become members?
+
+# Data Sources
+The data was downloaded from this link [here](https://divvy-tripdata.s3.amazonaws.com/index.html), and is the file that was updated on Dec 8, 2021. The data was made available by Motivate International Inc. 
+
+# Analysis 
+
+```{r}
+# Import the packages 
+
+
+```
+
+
+```{r include=FALSE}
+# Import the data 
+bike_trips <- fread()
+```
+
+
+# Summary 
+
+
+# Visualizations and key findings 
+
+
+# Recommendations 
