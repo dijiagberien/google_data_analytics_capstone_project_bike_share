@@ -36,11 +36,6 @@ if (!require(pacman)) {
 pacman::p_load(janitor, skimr, tidyverse, data.table)
 ```
 
-``` r
-bike_trips <- list.files(path = "C:/Users/diji.agberien/OneDrive - PayByPhone Technologies Inc/Documents/google_data_analytics_capstone_project_bike_share", pattern = "*.csv") %>% 
-  map_df(~fread(., na.strings = c("", NA)))
-```
-
 # Summary
 
 ``` r
@@ -295,10 +290,6 @@ analysis and visualizations in Tableau.
 
 # Visualizations and key findings
 
-``` r
-knitr::include_graphics("C:/Users/diji.agberien/OneDrive - PayByPhone Technologies Inc/Documents/google_data_analytics_capstone_project_bike_share/trip_dashboard.PNG")
-```
-
 <div class="figure">
 
 <img src="C:/Users/diji.agberien/OneDrive - PayByPhone Technologies Inc/Documents/google_data_analytics_capstone_project_bike_share/trip_dashboard.PNG" alt="Trip insights" width="100%" />
@@ -314,4 +305,10 @@ Trip insights
 -   Casual users mostly utilize cyclistic during the weekend while
     members mostly utilize Cyclistic during the weekday
 -   Regardless of whether the user is a Casual or Member, Cyclistic is
-    mostly utilized during the summer. \# Recommendations
+    mostly utilized during the summer.
+
+# Recommendations
+
+A possible technique to increase membership could be to run campaigns or
+marketing initiatives for casual members during the weekend of the
+summer months.
