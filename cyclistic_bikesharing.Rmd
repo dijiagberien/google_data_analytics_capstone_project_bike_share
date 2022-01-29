@@ -109,7 +109,6 @@ bike_trips_clean %>%
 
 Comparing the summary statistics with and without the NAs, we observe ever slight differences between both cases. If we were to drop the rows the missing data, we'd be left with 4525274 rows, which is a `r (1-(4525274/5479096))*100`% decrease in the data. Based on the above information, we will not be excluding the NAs from the data set, as additionally, it does not hinder us from attaining information from locations with labels. 
 
-
 ```{r}
 # Box-plot data for trips with and without outliers 
 trips_w_outliers <- boxplot(duration ~ member_casual, data = bike_trips_clean, outline = T, main = "Distribution of trip duration for members and casuals", xlab = "Group", ylab = "Duration")

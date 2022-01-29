@@ -39,33 +39,6 @@ pacman::p_load(janitor, skimr, tidyverse, data.table)
 # Summary
 
 ``` r
-# Print the first 5 rows of the data 
-head(bike_trips)
-```
-
-    ##             ride_id rideable_type          started_at            ended_at
-    ## 1: 70B6A9A437D4C30D  classic_bike 2020-12-27 12:44:29 2020-12-27 12:55:06
-    ## 2: 158A465D4E74C54A electric_bike 2020-12-18 17:37:15 2020-12-18 17:44:19
-    ## 3: 5262016E0F1F2F9A electric_bike 2020-12-15 15:04:33 2020-12-15 15:11:28
-    ## 4: BE119628E44F871E electric_bike 2020-12-15 15:54:18 2020-12-15 16:00:11
-    ## 5: 69AF78D57854E110 electric_bike 2020-12-22 12:08:17 2020-12-22 12:10:59
-    ## 6: C1DECC4AB488831C electric_bike 2020-12-22 13:26:37 2020-12-22 13:34:50
-    ##            start_station_name start_station_id          end_station_name
-    ## 1: Aberdeen St & Jackson Blvd            13157 Desplaines St & Kinzie St
-    ## 2:                       <NA>             <NA>                      <NA>
-    ## 3:                       <NA>             <NA>                      <NA>
-    ## 4:                       <NA>             <NA>                      <NA>
-    ## 5:                       <NA>             <NA>                      <NA>
-    ## 6:                       <NA>             <NA>                      <NA>
-    ##    end_station_id start_lat start_lng  end_lat   end_lng member_casual duration
-    ## 1:   TA1306000003  41.87773 -87.65479 41.88872 -87.64445        member       NA
-    ## 2:           <NA>  41.93000 -87.70000 41.91000 -87.70000        member       NA
-    ## 3:           <NA>  41.91000 -87.69000 41.93000 -87.70000        member       NA
-    ## 4:           <NA>  41.92000 -87.70000 41.91000 -87.70000        member       NA
-    ## 5:           <NA>  41.80000 -87.59000 41.80000 -87.59000        member       NA
-    ## 6:           <NA>  41.80000 -87.59000 41.78000 -87.60000        member       NA
-
-``` r
 # Get a summary of the table 
 skimr::skim(bike_trips)
 ```
@@ -230,13 +203,13 @@ us from attaining information from locations with labels.
 trips_w_outliers <- boxplot(duration ~ member_casual, data = bike_trips_clean, outline = T, main = "Distribution of trip duration for members and casuals", xlab = "Group", ylab = "Duration")
 ```
 
-![](cyclistic_bikesharing_files/figure-gfm/unnamed-chunk-10-1.png)<!-- -->
+![](cyclistic_bikesharing_files/figure-gfm/unnamed-chunk-9-1.png)<!-- -->
 
 ``` r
 trips_wo_outliers <- boxplot(duration ~ member_casual, data = bike_trips_clean, outline = F, main = "Distribution of trip duration for members and casuals (without outliers)", xlab = "Group", ylab = "Duration")
 ```
 
-![](cyclistic_bikesharing_files/figure-gfm/unnamed-chunk-10-2.png)<!-- -->
+![](cyclistic_bikesharing_files/figure-gfm/unnamed-chunk-9-2.png)<!-- -->
 
 Noteworthy information from the visual above is that casuals tend to
 have longer trips than members.
