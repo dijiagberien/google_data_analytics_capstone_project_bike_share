@@ -263,14 +263,7 @@ analysis and visualizations in Tableau.
 
 # Visualizations and key findings
 
-<div class="figure">
-
-<img src="C:/Users/diji.agberien/OneDrive - PayByPhone Technologies Inc/Documents/google_data_analytics_capstone_project_bike_share/trip_dashboard.PNG" alt="Trip insights" width="100%" />
-<p class="caption">
-Trip insights
-</p>
-
-</div>
+![Trip Insight](https://github.com/dijiagberien/google_data_analytics_capstone_project_bike_share/blob/main/cyclistic_bikesharing_files/figure-gfm/trip_dashboard.PNG)
 
 # Insights
 
