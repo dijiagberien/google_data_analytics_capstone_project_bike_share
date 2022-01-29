@@ -263,7 +263,7 @@ analysis and visualizations in Tableau.
 
 # Visualizations and key findings
 
-![Trip Insight](https://github.com/dijiagberien/google_data_analytics_capstone_project_bike_share/blob/main/cyclistic_bikesharing_files/figure-gfm/trip_dashboard.PNG)
+![Trip Insight](https://github.com/dijiagberien/google_data_analytics_capstone_project_bike_share/blob/main/trip_dashboard.PNG)
 
 # Insights
 
